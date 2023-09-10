@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preguntas</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Formulario de Preguntas</h2>
+        <form>
+            <!-- Pregunta 1 -->
+            <div class="form-group">
+                <label for="pregunta1">Pregunta 1: ¿Cuán satisfecho estás con el servicio? <span id="valorPregunta1">5</span></label>
+                <input type="range" class="form-control-range" id="pregunta1" min="0" max="10" step="1" value="5">
+            </div>
+            <!-- Pregunta 2 -->
+            <div class="form-group">
+                <label for="pregunta2">Pregunta 2: ¿Cuán interesante encontraste la información? <span id="valorPregunta2">5</span></label>
+                <input type="range" class="form-control-range" id="pregunta2" min="0" max="10" step="1" value="5">
+            </div>
+            <!-- Pregunta 3 -->
+            <div class="form-group">
+                <label for="pregunta3">Pregunta 3: ¿Cuán útil te resultó la presentación? <span id="valorPregunta3">5</span></label>
+                <input type="range" class="form-control-range" id="pregunta3" min="0" max="10" step="1" value="5">
+            </div>
+            <!-- Pregunta 4 -->
+            <div class="form-group">
+                <label for="pregunta4">Pregunta 4: ¿Cuán claro fue el contenido? <span id="valorPregunta4">5</span></label>
+                <input type="range" class="form-control-range" id="pregunta4" min="0" max="10" step="1" value="5">
+            </div>
+            <!-- Pregunta 5 -->
+            <div class="form-group">
+                <label for="pregunta5">Pregunta 5: ¿Cuán probable es que recomendarías esto a otros? <span id="valorPregunta5">5</span></label>
+                <input type="range" class="form-control-range" id="pregunta5" min="0" max="10" step="1" value="5">
+            </div>
+            <!-- Botón de envío -->
+            <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
