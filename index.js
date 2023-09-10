@@ -4,14 +4,13 @@ import morgan from "morgan";
 import cors from "cors";
 import helmet from "helmet";
 import ejs from "ejs";
-
+import { fileDirName } from "./modules/dirname.js";
 import { sequelize } from "./config/db.js";
 
 // Crea una instancia de Express
 const app = express();
-
 const port = process.env.PORT || 3000;
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 
 // Configura los middlewares
 app.use(morgan("dev"));
@@ -27,8 +26,8 @@ app.use(
 );
 app.use(morgan("dev"));
 // Configura EJS como motor de plantillas
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+// app.set("view engine", "ejs");
+// app.set("views", path.join(__dirname, "views"));
 
 // Configura las rutas
 app.get("/", (req, res) => {

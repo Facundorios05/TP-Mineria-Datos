@@ -1,6 +1,6 @@
-// Se importan las clases de la librería
-import { Sequelize, DataTypes } from "sequelize";
 import 'dotenv/config'
+
+import { Sequelize, DataTypes } from "sequelize";
 
 // Se crea una instancia de la conexión a la base de datos
 const sequelize = new Sequelize(
