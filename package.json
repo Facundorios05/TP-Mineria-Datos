@@ -1,7 +1,6 @@
 {
   "name": "tp-mineria-datos",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,5 +9,15 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "expres": "^0.0.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.1",
+    "sequelize": "^6.33.0"
+  }
 }
