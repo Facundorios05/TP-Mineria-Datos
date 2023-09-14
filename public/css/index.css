@@ -8,9 +8,16 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    color: #333;
+.titles {
+    display: flex;
+    justify-content: center;    
+    color: #127468;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .form-group {
     margin-bottom: 20px;
@@ -22,26 +29,6 @@ label {
     color: #009688;
 }
 
-/* Estilo de los controles deslizantes de rango */
-input[type="range"] {
-    width: 100%;
-    background: linear-gradient(90deg, #FFC107, #009688);
-    border: none;
-    height: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-top: 5px;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #009688;
-    border-radius: 50%;
-    cursor: pointer;
-}
 
 /* Estilo del botón de envío */
 button.btn-primary {
@@ -54,6 +41,23 @@ button.btn-primary {
     cursor: pointer;
 }
 
-button.btn-primary:hover {
-    background-color: #00796B;
+.navbar {
+    background-color: #009687b9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar-brand {
+    color: aliceblue;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.navbar-brand:hover {
+    color: rgb(61, 61, 61);
 }

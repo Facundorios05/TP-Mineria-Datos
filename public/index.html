@@ -1,49 +1,618 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Preguntas</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/public/css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Trabajo Práctico de Minería de Datos</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Integrantes
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#">Cárdenas Lucas</a></li>
+
+                            <li><a class="dropdown-item" href="#">Cristaldo Aymara</a></li>
+
+                            <li><a class="dropdown-item" href="#">Majda Facundo</a></li>
+
+                            <li><a class="dropdown-item" href="#">Ríos Facundo</a></li>
+
+                        </ul>
+
+                    </li>
+    </nav>
+
+    <div class="container mt-5 w-50">
+
+        <h2 class="mb-4">Formulario de Preguntas</h2>
+
+        <form>
+
+
+            <!-- 1er cuatrimestre -->
+
+            <div class="titles">
+                <h2>Primer cuatrimestre (1er año)</h2>
+            </div>
+
+
+            <!-- materia 1 -->
+            <div class="form-group mt-5 mb-5">
+
+
+                <h3><label for="materia1">Arquitectura y sistema operativo</p>
+                </h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia1Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia1Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia1" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- materia 2 -->
+            <div class="form-group mt-5 mb-5">
+
+
+                <h3><label for="materia2">Algoritmo y Estructura de datos</p>
+                </h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia2Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia2Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia2" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- materia 3 -->
+            <div class="form-group mt-5 mb-5">
+
+
+                <h3><label for="materia3">Taller de lenguaje de programación I</p>
+                </h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia3Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia3Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia3" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- materia 4 -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia4">Base de datos II</p>
+                </h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia4Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia4Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia4" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- materia 5 -->
+            <div class="form-group mt-5 mb-5">
+
+
+                <h3><label for="materia5">Proyecto de integración I</p>
+                </h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia5Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia5Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia5" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- materia 6 -->
+            <div class="form-group mt-5 mb-5">
+
+
+                <h3><label for="materia6">Laboratorio de ingles I</p>
+                </h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia6Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia6Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia6" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 7 -->
+
+            <div class="form-group mt-5 mb-5">
+
+
+                <h3><label for="materia7">Matematica aplicada I</p>
+                </h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia7Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia7Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia7" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <div class="titles">
+                <h2>Segundo cuatrimestre (1er año)</h2>
+            </div>
+
+            <!-- Materia 1 -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia8">Taller de Lenguaje de Programación II</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia8Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia8Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia8" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 2 - Segundo Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia9">Ingeniería de Software I</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia9Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia9Pregunta2" min="0" max="10" step="1" value="5">
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia9" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 3 - Segundo Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia10">Base de Datos II</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia10Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia10Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia10Pregunta2" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 4 - Segundo Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia11">Proyecto de Integración II</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia11Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia11Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia11" min="0" max="10" step="1" value="5">
+            </div>
+
+            <!-- Materia 5 - Segundo Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia12">Orientación y Valores</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia12Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia12Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia12" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 6 - Segundo Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia13">Laboratorio de Inglés II</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia13Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia13Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia13" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 7 - Segundo Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia14">Matemática Aplicada II</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia14Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia14Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia14" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <div class="titles">
+                <h2>Tercer cuatrimestre (2do año)</h2>
+            </div>
+
+            <!-- Materia 1 - Tercer Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia15">Estadística I</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia15Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia15Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia15" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 2 - Tercer Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia16">React Native</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia16Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia16Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia16" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 3 - Tercer Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia17">Infraestructura como código (Máquinas virtuales - Orquestación de
+                        contenedores con Docker)</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia17Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia17Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia17" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 4 - Tercer Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia18">Taller de Lenguajes de Programación III (FlexMind)</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia18Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia18Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia18" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 5 - Tercer Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia19">Ingeniería de Software II</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia19Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia19Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia19" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 6 - Tercer Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia20">Seminario de Actualización II (Aprendizaje Automático con
+                        TensorFlow)</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia20Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia20Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia20" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Materia 7 - Tercer Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+
+                <h3><label for="materia21">Proyecto</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+
+                <input type="range" class="form-control-range" name="materia21Pregunta1" min="0" max="10" step="1"
+                    value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+
+                <input type="range" class="form-control-range" name="materia21Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+
+                <input type="range" class="form-control-range" name="materia21" min="0" max="10" step="1" value="5">
+
+            </div>
+
+            <!-- Cuarto Cuatrimestre -->
+            <div class="titles">
+                <h2>Cuarto cuatrimestre (2do año)</h2>
+            </div>
+
+            <!-- Materia 1 - Cuarto Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+                <h3><label for="materia22">Seminario de Actualización III (Microservicios)</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+                <input type="range" class="form-control-range" name="materia22Pregunta1" min="0" max="10" step="1" value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+                <input type="range" class="form-control-range" name="materia22Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+                <input type="range" class="form-control-range" name="materia22Pregunta3" min="0" max="10" step="1" value="5">
+            </div>
+
+            <!-- Materia 2 - Cuarto Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+                <h3><label for="materia23">Ciberseguridad</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+                <input type="range" class="form-control-range" name="materia23Pregunta1" min="0" max="10" step="1" value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+                <input type="range" class="form-control-range" name="materia23Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+                <input type="range" class="form-control-range" name="materia23Pregunta3" min="0" max="10" step="1" value="5">
+            </div>
+
+            <!-- Materia 3 - Cuarto Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+                <h3><label for="materia24">Taller de lenguajes de programación IV (POO-Typescript-Nest)</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+                <input type="range" class="form-control-range" name="materia24Pregunta1" min="0" max="10" step="1" value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+                <input type="range" class="form-control-range" name="materia24Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+                <input type="range" class="form-control-range" name="materia24Pregunta3" min="0" max="10" step="1" value="5">
+            </div>
+
+            <!-- Materia 4 - Cuarto Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+                <h3><label for="materia25">Análisis de la realidad formoseña</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+                <input type="range" class="form-control-range" name="materia25Pregunta1" min="0" max="10" step="1" value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+                <input type="range" class="form-control-range" name="materia25Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+                <input type="range" class="form-control-range" name="materia25" min="0" max="10" step="1" value="5">
+            </div>
+
+            <!-- Materia 5 - Cuarto Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+                <h3><label for="materia26">Redes y Seguridad</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+                <input type="range" class="form-control-range" name="materia26Pregunta1" min="0" max="10" step="1" value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+                <input type="range" class="form-control-range" name="materia26Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+                <input type="range" class="form-control-range" name="materia26" min="0" max="10" step="1" value="5">
+            </div>
+
+            <!-- Materia 6 - Cuarto Cuatrimestre -->
+            <div class="form-group mt-5 mb-5">
+                <h3><label for="materia27">Proyecto</label></h3>
+
+                <h4>Contenido del Curso y Relevancia</h4>
+                <input type="range" class="form-control-range" name="materia27Pregunta1" min="0" max="10" step="1" value="5">
+
+                <h4>Metodología de Enseñanza y Evaluación</h4>
+                <input type="range" class="form-control-range" name="materia27Pregunta2" min="0" max="10" step="1" value="5">
+
+                <h4>Apoyo al Estudiante</h4>
+                <input type="range" class="form-control-range" name="materia27" min="0" max="10" step="1" value="5">
+            </div>
+
+
+    </div>
+
+
+    <!-- Botón de envío -->
+    <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
+    </form>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <div class="container mt-5">
-        <h2 class="mb-4">Formulario de Preguntas</h2>
-        <form>
-            <!-- Pregunta 1 -->
-            <div class="form-group">
-                <label for="pregunta1">Pregunta 1: ¿Cuán satisfecho estás con el servicio? <span id="valorPregunta1">5</span></label>
-                <input type="range" class="form-control-range" id="pregunta1" min="0" max="10" step="1" value="5">
-            </div>
-            <!-- Pregunta 2 -->
-            <div class="form-group">
-                <label for="pregunta2">Pregunta 2: ¿Cuán interesante encontraste la información? <span id="valorPregunta2">5</span></label>
-                <input type="range" class="form-control-range" id="pregunta2" min="0" max="10" step="1" value="5">
-            </div>
-            <!-- Pregunta 3 -->
-            <div class="form-group">
-                <label for="pregunta3">Pregunta 3: ¿Cuán útil te resultó la presentación? <span id="valorPregunta3">5</span></label>
-                <input type="range" class="form-control-range" id="pregunta3" min="0" max="10" step="1" value="5">
-            </div>
-            <!-- Pregunta 4 -->
-            <div class="form-group">
-                <label for="pregunta4">Pregunta 4: ¿Cuán claro fue el contenido? <span id="valorPregunta4">5</span></label>
-                <input type="range" class="form-control-range" id="pregunta4" min="0" max="10" step="1" value="5">
-            </div>
-            <!-- Pregunta 5 -->
-            <div class="form-group">
-                <label for="pregunta5">Pregunta 5: ¿Cuán probable es que recomendarías esto a otros? <span id="valorPregunta5">5</span></label>
-                <input type="range" class="form-control-range" id="pregunta5" min="0" max="10" step="1" value="5">
-            </div>
-            <!-- Botón de envío -->
-            <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
-        </form>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
     <script src="index.js"></script>
 </body>
+
 </html>
