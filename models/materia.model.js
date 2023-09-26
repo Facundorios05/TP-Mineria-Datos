@@ -1,7 +1,8 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../config/db";
+import { sequelize } from "../config/db.js";
 
-const MateriaModel = sequelize.define("Materia", {
+
+export const MateriaModel = sequelize.define("Materia", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -13,4 +14,4 @@ const MateriaModel = sequelize.define("Materia", {
   },
 });
 
-export default MateriaModel;
+

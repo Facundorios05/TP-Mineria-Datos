@@ -1,7 +1,9 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../config/db";
+import { sequelize } from "../config/db.js";
 
-const AñoModel = sequelize.define("AñoAcademico", {
+
+
+export const AñoModel = sequelize.define("AñoAcademico", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -13,4 +15,3 @@ const AñoModel = sequelize.define("AñoAcademico", {
   },
 });
 
-export default AñoModel;

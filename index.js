@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000;
 
 // Configura los middlewares
 app.use(morgan("dev"));
-app.use(cors());
+
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

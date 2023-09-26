@@ -4,7 +4,8 @@ import { EstudianteModel } from "../models/estudiante.model.js";
 import { AñoModel } from "../models/año.model.js";
 
 // Función para establecer relaciones
-async function establecerRelaciones() {
+
+export async function establecerRelaciones() {
   // Relaciones entre Materia, Estudiante y Respuesta
   MateriaModel.belongsToMany(EstudianteModel, { through: RespuestaModel });
   EstudianteModel.belongsToMany(MateriaModel, { through: RespuestaModel });
@@ -30,5 +31,3 @@ async function establecerRelaciones() {
     console.log("Error in Relations.js");
   }
 }
-
-export default establecerRelaciones;

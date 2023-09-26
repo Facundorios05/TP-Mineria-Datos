@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../config/db";
+import { sequelize } from "../config/db.js";
 
-const RespuestaModel = sequelize.define("Respuesta", {
+export const RespuestaModel = sequelize.define("Respuesta", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -24,5 +24,3 @@ const RespuestaModel = sequelize.define("Respuesta", {
     allowNull: false,
   },
 });
-
-export default RespuestaModel;

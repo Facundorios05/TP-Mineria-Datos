@@ -1,8 +1,9 @@
-import { DataTypes } from "DataTypes";
-import sequelize from "../config/db";
+import { DataTypes } from "sequelize";
+import { sequelize } from "../config/db.js";
 
 // Modelo de estudiante
-const EstudianteModel = sequelize.define("Estudiante", {
+
+export const EstudianteModel = sequelize.define("Estudiante", {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -26,4 +27,3 @@ const EstudianteModel = sequelize.define("Estudiante", {
   },
 });
 
-export default EstudianteModel;
