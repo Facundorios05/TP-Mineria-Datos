@@ -1,5 +1,4 @@
-import 'dotenv/config'
-
+import "dotenv/config";
 import { Sequelize, DataTypes } from "sequelize";
 
 // Se crea una instancia de la conexión a la base de datos
@@ -9,9 +8,9 @@ const sequelize = new Sequelize(
   process.env.DB_PASSWORD,
   {
     host: process.env.DB_HOST,
-    dialect: process.env.DB_dialect,
+    dialect: process.env.DB_DIALECT,
   }
 );
 
-// Se exportan la conexión a MySQL, Model y DataTypes para poder usarlas en los modelos
+// Se exportan los modelos y la instancia de Sequelize
 export { sequelize, DataTypes };
