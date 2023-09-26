@@ -1,8 +1,8 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../config/db.js";
-
+// Modelo de Respuesta
 export const RespuestaModel = sequelize.define("Respuesta", {
-  id: {
+  RespuestaId: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
@@ -23,4 +23,16 @@ export const RespuestaModel = sequelize.define("Respuesta", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+  // Año_AcademicoId: {
+  //   type: DataTypes.INTEGER,
+  //   allowNull: true,
+  //   references: {
+  //     model: "Año_Academico",
+  //     key: "Año_AcademicoId",
+  //   },
+
+  //   onDelete: "SET NULL",
+
+  //   onUpdate: "CASCADE",
+  // },
 });

@@ -1,33 +1,36 @@
+import { EstudianteModel } from "../models/estudiante.model.js";
 import { MateriaModel } from "../models/materia.model.js";
 import { RespuestaModel } from "../models/respuesta.model.js";
-import { EstudianteModel } from "../models/estudiante.model.js";
 import { AñoModel } from "../models/año.model.js";
+import { sequelize } from "../config/db.js";
 
 // Función para establecer relaciones
-
 export async function establecerRelaciones() {
-  // Relaciones entre Materia, Estudiante y Respuesta
-  MateriaModel.belongsToMany(EstudianteModel, { through: RespuestaModel });
-  EstudianteModel.belongsToMany(MateriaModel, { through: RespuestaModel });
+  // Relaciones entre Estudiante y Respuesta
+  EstudianteModel.hasMany(RespuestaModel, { foreignKey: "EstudianteId" });
+  RespuestaModel.belongsTo(EstudianteModel, { foreignKey: "EstudianteId" });
+
+  // Relaciones entre Materia y Respuesta
+  MateriaModel.hasMany(RespuestaModel, { foreignKey: "MateriaId" });
+  RespuestaModel.belongsTo(MateriaModel, { foreignKey: "MateriaId" });
 
   // Relaciones entre AñoAcademico y Respuesta
-  AñoModel.hasMany(RespuestaModel);
-  RespuestaModel.belongsTo(AñoModel);
+  AñoModel.hasMany(RespuestaModel, { foreignKey: "Año_AcademicoId" });
+  RespuestaModel.belongsTo(AñoModel, { foreignKey: "Año_AcademicoId" });
+}
 
-  // Sincronizar las relaciones con la base de datos
+// Función para sincronizar todas las tablas
+export async function sincronizarBaseDeDatos() {
   try {
-    await MateriaModel.sync();
-    await RespuestaModel.sync();
-    await EstudianteModel.sync();
-    await AñoModel.sync();
-
-    // Ejecutar las relaciones
-    await MateriaModel.associate();
-    await RespuestaModel.associate();
-    await EstudianteModel.associate();
-    await AñoModel.associate();
-    console.log("Relaciones aplicadas correctamente");
+    await sequelize.sync({ force: true, alter: true });
+    console.log("Base de datos sincronizada correctamente");
   } catch (error) {
-    console.log("Error in Relations.js");
+    console.error("Error al sincronizar la base de datos:", error);
   }
+}
+
+// Sincronizar las relaciones con la base de datos
+export async function sync() {
+  await establecerRelaciones();
+  await sincronizarBaseDeDatos();
 }

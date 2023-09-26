@@ -1,9 +1,8 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../config/db.js";
 
-
 export const MateriaModel = sequelize.define("Materia", {
-  id: {
+  MateriaId: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
@@ -12,6 +11,9 @@ export const MateriaModel = sequelize.define("Materia", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+
+  codigo: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
 });
-
-
